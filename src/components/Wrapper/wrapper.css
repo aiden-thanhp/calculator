@@ -1,0 +1,12 @@
+.wrapper {
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: 400px
+}
+
+@media screen and (min-width: 500px) {
+    .wrapper {
+        width: 400px;
+    }
+}
