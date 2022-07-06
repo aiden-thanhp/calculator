@@ -4,6 +4,8 @@ import ButtonBox from "../../components/ButtonBox/ButtonBox";
 import Display from "../../components/Display/Display";
 import Wrapper from "../../components/Wrapper/Wrapper";
 
+//Layout of the basic calculator
+
 export default function BasicCalculator() {
     const buttonList = [
         ["%", "CE", "C", "⇦"],
@@ -14,6 +16,7 @@ export default function BasicCalculator() {
         ["±", "0", ".", "="]
     ];
 
+    //set the state of the calculation, including the sign, number put in, and result
     const [calculation, setCalculation] = useState({
         sign: "",
         number: 0,

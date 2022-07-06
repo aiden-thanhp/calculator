@@ -1,6 +1,8 @@
 import React from "react";
 import "./button.css"
 
+//Create a general button to call
+
 export default function Button({ onClick, value }) {
   function classify(value) {
     const secondaryButtons = [
@@ -10,6 +12,7 @@ export default function Button({ onClick, value }) {
       ["±", "0", ".", "÷"]
     ];
 
+    //Define the classname for each button
     if (secondaryButtons.flat().includes(value)) return "btn btn-secondary mt-2 py-10 px-24";
     else if (value === "=") return "btn btn-primary mt-2 py-10 px-24";
     else return "btn btn-light mt-2 py-10 px-24";

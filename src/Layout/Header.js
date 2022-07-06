@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/Logo.png"
 
+//Header of the calculator
 export default function Header() {
     return (
         <div className="sticky-top">
